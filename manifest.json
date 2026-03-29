@@ -5,5 +5,6 @@
   "minAppVersion": "1.0.0",
   "description": "Displays past daily notes as cards in the footer of current daily notes",
   "author": "としひろ",
+  "authorUrl": "https://github.com/toshihirokmd",
   "isDesktopOnly": false
 }
