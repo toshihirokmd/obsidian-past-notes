@@ -35,7 +35,11 @@ export class NoteResolver {
 
     const allFiles = this.vault.getMarkdownFiles() as any[];
     const dailyNoteFiles = allFiles.filter((f: any) => {
-      if (!f.path.startsWith(this.dailyNotesFolder + '/')) return false;
+      if (this.dailyNotesFolder) {
+        if (!f.path.startsWith(this.dailyNotesFolder + '/')) return false;
+      } else {
+        if (f.path.includes('/')) return false;
+      }
       if (f.path === refPath) return false;
       return DAILY_NOTE_NAME_REGEX.test(f.name || '');
     });
@@ -100,8 +104,13 @@ export class NoteResolver {
   }
 
   static isDailyNote(filePath: string, dailyNotesFolder: string): boolean {
-    if (!filePath.startsWith(dailyNotesFolder + '/')) return false;
-    const filename = filePath.split('/').pop() || '';
+    if (dailyNotesFolder) {
+      if (!filePath.startsWith(dailyNotesFolder + '/')) return false;
+    } else {
+      // ルート直下: サブフォルダ内のファイルは除外
+      if (filePath.includes('/')) return false;
+    }
+    const filename = filePath.split('/').pop() || filePath;
     return DAILY_NOTE_NAME_REGEX.test(filename);
   }
 }

@@ -50,12 +50,12 @@ export const DEFAULT_SETTINGS: PluginSettings = {
   cardHeight: 150,
   showPreview: true,
   previewLines: 4,
-  dailyNotesFolder: '00-Inbox',
+  dailyNotesFolder: '',
 };
 
 /** デイリーノートのパスを構築 */
 export function buildDailyNotePath(folder: string, filename: string): string {
-  return `${folder}/${filename}.md`;
+  return folder ? `${folder}/${filename}.md` : `${filename}.md`;
 }
 
 export interface NoteInfo {

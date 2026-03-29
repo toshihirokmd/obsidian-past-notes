@@ -39,9 +39,9 @@ export class OneYearAgoSettingsTab extends PluginSettingTab {
   private addFolderSetting(containerEl: HTMLElement) {
     new Setting(containerEl)
       .setName('Daily Notes Folder')
-      .setDesc('デイリーノートが保存されているフォルダ')
+      .setDesc('デイリーノートが保存されているフォルダ（空欄 = Vault直下）')
       .addText(text => text
-        .setPlaceholder(DEFAULT_SETTINGS.dailyNotesFolder)
+        .setPlaceholder('（空欄 = Vault直下）')
         .setValue(this.settings.dailyNotesFolder)
         .onChange(async (value: string) => {
           this.settings.dailyNotesFolder = value;

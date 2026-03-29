@@ -27,8 +27,8 @@ describe('SettingsTab', () => {
       expect(DEFAULT_SETTINGS.previewLines).toBe(4);
     });
 
-    it('should have dailyNotesFolder of "00-Inbox"', () => {
-      expect(DEFAULT_SETTINGS.dailyNotesFolder).toBe('00-Inbox');
+    it('should have dailyNotesFolder of empty string (vault root)', () => {
+      expect(DEFAULT_SETTINGS.dailyNotesFolder).toBe('');
     });
   });
 
