@@ -1,0 +1,9 @@
+{
+  "id": "1year-ago",
+  "name": "1YEAR AGO",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Displays past daily notes as cards in the footer of current daily notes",
+  "author": "としひろ",
+  "isDesktopOnly": false
+}

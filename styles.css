@@ -1,0 +1,104 @@
+/* ===== 1YEAR AGO Plugin Styles ===== */
+
+/* フッターコンテナ: .markdown-preview-sizer の兄弟として配置 */
+.oneyear-ago-footer {
+  margin-top: 8px;
+  margin-bottom: 55px;
+  padding: 0 var(--file-margins);
+  user-select: none;
+}
+
+/* 埋め込みノート内では非表示 */
+.markdown-embed-content .oneyear-ago-footer {
+  display: none;
+}
+
+.oneyear-ago-section {
+  margin: 0;
+  padding: 24px 0 16px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.oneyear-ago-header {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin: 0 0 16px 0;
+  padding: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Card Grid */
+.oneyear-ago-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-width, 200px), 1fr));
+  gap: 12px;
+}
+
+/* Individual Card — 2hop-links-plus 風 */
+.oneyear-ago-card {
+  position: relative;
+  box-sizing: border-box;
+  max-height: var(--card-height, 160px);
+  padding: 14px 16px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.oneyear-ago-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Fade-out overflow at bottom */
+.oneyear-ago-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: linear-gradient(transparent, var(--background-secondary));
+  pointer-events: none;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Period Label Badge */
+.oneyear-ago-label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+/* Date */
+.oneyear-ago-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-bottom: 8px;
+}
+
+/* Content Preview */
+.oneyear-ago-preview {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
