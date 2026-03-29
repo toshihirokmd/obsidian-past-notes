@@ -28,7 +28,7 @@ export class OneYearAgoSettingsTab extends PluginSettingTab {
   display(): void {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl('h2', { text: '1YEAR AGO Settings' });
+    containerEl.createEl('h2', { text: 'Past Notes Settings' });
 
     this.addFolderSetting(containerEl);
     this.addCardDimensionSettings(containerEl);

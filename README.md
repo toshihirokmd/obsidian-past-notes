@@ -1,4 +1,4 @@
-# 1YEAR AGO
+# Past Notes
 
 Obsidian plugin that displays past daily notes as cards at the bottom of your current daily note.
 
@@ -18,7 +18,7 @@ Obsidian plugin that displays past daily notes as cards at the bottom of your cu
 ### Manual Installation
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](../../releases/latest)
-2. Create a folder `your-vault/.obsidian/plugins/obsidian-1year-ago/`
+2. Create a folder `your-vault/.obsidian/plugins/past-notes/`
 3. Copy the downloaded files into the folder
 4. Restart Obsidian and enable the plugin in Settings → Community plugins
 

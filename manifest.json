@@ -1,7 +1,7 @@
 {
-  "id": "1year-ago",
-  "name": "1YEAR AGO",
-  "version": "0.1.0",
+  "id": "past-notes",
+  "name": "Past Notes",
+  "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "description": "Displays past daily notes as cards in the footer of current daily notes",
   "author": "Toshihiro",

@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-1year-ago",
+  "name": "obsidian-past-notes",
   "version": "0.1.0",
   "description": "Displays past daily notes as cards in the footer of current daily notes",
   "main": "main.js",
