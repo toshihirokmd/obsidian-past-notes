@@ -19,7 +19,7 @@
     "past-notes",
     "1year-ago"
   ],
-  "author": "としひろ",
+  "author": "Toshihiro",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.0",
