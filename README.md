@@ -26,7 +26,7 @@ Obsidian plugin that displays past daily notes as cards at the bottom of your cu
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| Daily Notes Folder | Folder where daily notes are stored | `00-Inbox` |
+| Daily Notes Folder | Folder where daily notes are stored | *(empty = vault root)* |
 | Card Width | Width of each card (px) | `200` |
 | Card Height | Max height of each card (px) | `150` |
 | Show Preview | Display content preview in cards | `true` |
