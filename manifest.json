@@ -6,5 +6,6 @@
   "description": "Displays past daily notes as cards at the bottom of your current daily note.",
   "author": "Toshihiro",
   "authorUrl": "https://github.com/toshihirokmd",
-  "isDesktopOnly": false
+  "isDesktopOnly": false,
+  "fundingUrl": "https://buymeacoffee.com/toshihirokmd"
 }
