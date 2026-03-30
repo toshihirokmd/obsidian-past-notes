@@ -1,7 +1,7 @@
 {
   "name": "obsidian-past-notes",
   "version": "0.1.0",
-  "description": "Displays past daily notes as cards in the footer of current daily notes",
+  "description": "Displays past daily notes as cards at the bottom of your current daily note.",
   "main": "main.js",
   "scripts": {
     "dev": "rollup --config rollup.config.js -w",
