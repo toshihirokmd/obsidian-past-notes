@@ -13,6 +13,17 @@
   display: none;
 }
 
+/* Live Preview: cm-contentのデフォルト余白を縮小 */
+.cm-sizer:has(.oneyear-ago-footer) .cm-content {
+  padding-bottom: 50px !important;
+}
+
+/* Reading view: preview-sizerのデフォルト余白を縮小 */
+.markdown-preview-sizer:has(.oneyear-ago-footer) {
+  min-height: unset !important;
+  padding-bottom: 0 !important;
+}
+
 .oneyear-ago-section {
   margin: 0;
   padding: 24px 0 16px;
